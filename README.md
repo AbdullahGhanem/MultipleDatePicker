@@ -41,3 +41,7 @@ MultipleDatePicker::make('Feild Name', 'feild_name')->hideFromIndex(),
 ## License
 
 Nova Multiple DatePicker is open-sourced software licensed under the [MIT license](LICENSE.md).
+
+## Sponsor
+
+[💚️ Become a Sponsor](https://github.com/sponsors/AbdullahGhanem)
