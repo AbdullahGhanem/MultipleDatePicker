@@ -37,7 +37,7 @@ class MultipleDatePicker extends Field
                     $dateString = preg_replace('/\(.*$/', '', $i);
                     return Carbon::parse($dateString)->isoFormat('YYYY-MM-DD') ?? null;
                 }
-            });
+            })->filter();
             $model->{$attribute} = $items;
         }
     }
@@ -46,7 +46,7 @@ class MultipleDatePicker extends Field
     {
         $items = collect($resource->{$attribute})->map(function ($i) {
             return Carbon::parse($i)->format('d/m/Y') ?? null;
-        });
+        })->filter();
         // dd($items);
         return $items;
     }
