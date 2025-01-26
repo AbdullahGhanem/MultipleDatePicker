@@ -42,7 +42,7 @@ class MultipleDatePicker extends Field
         }
     }
 
-    public function resolveAttribute($resource, $attribute = null)
+    public function resolveAttribute($resource, $attribute): mixed
     {
         $items = collect($resource->{$attribute})->map(function ($i) {
             return Carbon::parse($i)->format('d/m/Y') ?? null;
