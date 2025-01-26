@@ -11,7 +11,7 @@ This [Laravel Nova](https://nova.laravel.com/) package adds the ability to set a
 ## Requirements
 
 - `php: ^7.3|^8.0`
-- `laravel/nova: ^4.0`
+- `laravel/nova: ^4.0|^5.0`
 
 ## Features
 
