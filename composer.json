@@ -1,18 +1,30 @@
 {
     "name": "ghanem/multiple-date-picker",
-    "description": "A Laravel Nova field.",
+    "description": "A Laravel Nova field for selecting multiple dates with a beautiful date picker interface.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "date-picker",
+        "multiple-dates",
+        "field"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^8.1",
         "laravel/nova": "^4.0|^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
             "Ghanem\\MultipleDatePicker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ghanem\\MultipleDatePicker\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -21,6 +33,9 @@
                 "Ghanem\\MultipleDatePicker\\FieldServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "config": {
         "sort-packages": true
