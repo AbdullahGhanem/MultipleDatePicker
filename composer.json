@@ -35,7 +35,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit --configuration phpunit.xml.dist"
     },
     "config": {
         "sort-packages": true
